@@ -1,0 +1,39 @@
+body {
+    
+}
+
+.site{
+    max-width: var(--layout-width, 60em);
+    margin: 0 auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .site-branding {
+    display: inline-block;
+    width: 50%;
+} */
+
+/* .site-header nav {
+    display: flex;
+    vertical-align: top;
+} */
+
+/* .site-main {
+    display: inline-block;
+    width: 70%;
+}
+
+.site-sidebar {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.entry {
+    padding: 0 1.5em
+} */
