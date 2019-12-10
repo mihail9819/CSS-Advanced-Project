@@ -25,7 +25,7 @@
     color: #FFF;
 }
 
-/* .nav li a:before{
+.nav li a:before{
     display: block;
     margin-right: 0.5em;
     font-family: "Font Awesome 5 Free";
@@ -38,4 +38,4 @@
 
 .nav li.page-title-contacts a:before{
     content: "\e942";
-} */
+}

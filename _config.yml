@@ -7,7 +7,7 @@ title: CSS Advanced
 email: mihailkehaiov98@gmail.com
 description: Hello there!
 destination: docs
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/CSS-Advanced-Project"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username: Mihail Keahiov
 github_username:  mihail9819
@@ -17,14 +17,14 @@ theme: kramdown
 plugins:
   - jekyll-feed
 
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
