@@ -10,13 +10,17 @@
 <body>
     <div class="site">
         <header class="site-header">
-            <h1><a href="/">{{ site.title }}</a></h1>
-            <p>{{ site.description }}</p>
-            <nav>
+
+            <div class="site-branding">
+                    <h1><a href="/">{{ site.title }}</a></h1>
+                    <p>{{ site.description }}</p>
+            </div>
+            
+            <nav class="nav">
                 <ul>
                     {%for page in site.pages %}
                         {% if page.title %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        <li class="page-title-{{ page.title | slugify }}"><a href="{{ page.url }}">{{ page.title }}</a></li>
                         {% endif %}
                     {% endfor %}
                 </ul>
