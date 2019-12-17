@@ -7,8 +7,9 @@ title: Рибарник Камено
 email: mihailkehaiov98@gmail.com
 description: ""
 destination: docs
-baseurl: "/CSS-Advanced-Project"
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+# baseurl: "/CSS-Advanced-Project"
+url: "" 
 facebook_username: Mihail Keahiov
 github_username:  mihail9819
 
@@ -18,6 +19,8 @@ plugins:
   - jekyll-feed
 
 exclude:
+  - docs
+  - node_modules
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

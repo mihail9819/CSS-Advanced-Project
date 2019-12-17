@@ -1,0 +1,64 @@
+.nav {
+    text-align: right;
+    padding-top: 0.5em;
+}   
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    display: block;
+    padding: 0 0.5em;
+    transform: translate(0, -5em);
+    opacity: 0;
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+nav ul li:nth-child(2) {transition-delay: 0.1s;}
+nav ul li:nth-child(3) {transition-delay: 0.2s;}
+nav ul li:nth-child(4) {transition-delay: 0.3s;}
+nav ul li:nth-child(5) {transition-delay: 0.4s;}
+
+.loaded nav ul li {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+.nav a {
+    font-family: 'Amatic SC', cursive;
+    display: block ;
+    padding: 0.5em 1em;
+    background: grey;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 0.4em;
+    transition: background 0.3s ease-in;
+}
+.nav .current-page a{
+    background: rgba(6, 47, 74) ; 
+}
+.nav a:hover {
+    background: rgba(0,0,0,0.3);
+    color: #FFF;
+}
+.nav a:active{
+    background-color:rgba(0,0,0,0.3);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* .nav li a:before{
+    display: block;
+    margin-right: 0.5em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.nav li.page-title-за-нас a:before{
+    content: "\f000";
+}
+
+.nav li.page-title-контакти a:before{
+    content: "\e942";
+} */
