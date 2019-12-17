@@ -7,25 +7,22 @@
     <title>{{ site.title }} </title>
     <link rel="stylesheet" href="{{ site.baseurl }}/css/fontawesome/css/all.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+    <script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
 </head>
 <body>
     <div class="site">
         <header class="site-header">
 
             <div class="site-branding">
-                    <h1><a href="">{{ site.title }}</a></h1>
-                    <p>{{ site.description }}</p>
+                    <h1>Рибарник Камено <img src="/CSS-Advanced-Project/site-logo.jpg" alt="site-logo"style="max-width: 130px;"></h1>
+                    <!-- <p>{{ site.description }}</p> -->
             </div>
             
-            <nav class="nav">
-                <ul>
-                    {%for page in site.pages %}
-                        {% if page.title %}
-                        <li class="page-title-{{ page.title | slugify }}"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
-            </nav>
+            {% include navigation.html %}
         </header>
 
         <main class="site-main">

@@ -3,7 +3,7 @@ body {
 }
 
 .site{
-    max-width: var(--layout-width, 60em);
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -11,28 +11,36 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0 1em 0 rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255);
+    /* background: url('https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiymJSzgrrmAhWJHhQKHSq-BjkQjRx6BAgBEAQ&url=https%3A%2F%2Fbulgariansanctuaries.com%2F2018%2F08%2F04%2F%25D1%2581%25D0%25B2%25D0%25B5%25D1%2582%25D0%25B8%25D0%25BB%25D0%25B8%25D1%2589%25D0%25B5-%25D0%25BA%25D0%25B0%25D0%25BC%25D0%25B0%25D0%25BA%25D0%25BE-%25D0%25B1%25D0%25B0%25D0%25BD%25D1%258F%2F&psig=AOvVaw012R746RIsKhp8H9eMs0NB&ust=1576580557817506'); */
 }
 
-/* .site-branding {
-    display: inline-block;
-    width: 50%;
-} */
-
-/* .site-header nav {
+.site-header h1,
+.site-header nav{
     display: flex;
-    vertical-align: top;
-} */
+    padding: 1rem 1.4rem;
+}
+
+.site-header nav{
+padding-top: 2em;
+}
+
+.site-header site-logo{
+    display: block;
+    padding-left: 0.6em;
+}
+
+.site-branding img{
+    border-radius: 50%;
+}
 
 /* .site-main {
     display: inline-block;
     width: 70%;
 }
 
-.site-sidebar {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-}
+
 
 .entry {
     padding: 0 1.5em
